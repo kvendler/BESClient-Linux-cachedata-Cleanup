@@ -5,7 +5,7 @@
 		<Description><![CDATA[&lt;enter a description of the problem and the corrective action here&gt; ]]></Description>
 		<Relevance>name of operating system contains "Linux"</Relevance>
 		<Relevance>exists folder "/var/opt/BESClient/CITBin/cache_data/"</Relevance>
-		<Relevance><![CDATA[(it > 128*1024*1024) of sum of sizes of descendants of folder "/var/opt/BESClient/CITBin"]]></Relevance>
+		<Relevance><![CDATA[(it > 350*1024*1024) of sum of sizes of descendants of folder "/var/opt/BESClient/CITBin"]]></Relevance>
 		<Category></Category>
 		<Source>Internal</Source>
 		<SourceID></SourceID>
