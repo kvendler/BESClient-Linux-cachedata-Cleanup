@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+	<Analysis>
+		<Title>Threshold for BESClient/CITBin/cache_data for Linux Devices</Title>
+		<Description><![CDATA[&lt;enter a description of the analysis here&gt; ]]></Description>
+		<Relevance>name of operating system contains "Linux"</Relevance>
+		<Relevance>exists folder "/var/opt/BESClient/CITBin/cache_data"</Relevance>
+		<Source>Internal</Source>
+		<SourceReleaseDate>2023-06-28</SourceReleaseDate>
+		<MIMEField>
+			<Name>x-fixlet-modification-time</Name>
+			<Value>Wed, 28 Jun 2023 18:32:06 +0000</Value>
+		</MIMEField>
+		<Domain>BESC</Domain>
+		<Property Name="Threshold Status" ID="1"><![CDATA[if sum of sizes of descendants of folder "/var/opt/BESClient/CITBin" > 367001600 then "WARNING: 350 MB DISK THRESHOLD EXCEEDED!" else "Within threshold. No action needed."]]></Property>
+		<Property Name="Current Utilization (MB)" ID="2">sum of sizes of descendants of folder "/var/opt/BESClient/CITBin"/1024/1024</Property>
+	</Analysis>
+</BES>
